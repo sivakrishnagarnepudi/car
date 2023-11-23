@@ -16,5 +16,8 @@ public class Engine {
     public String getTypeofmodel() {
         return typeofmodel;
     }
+    public String toString(){
+        return typeofengine+","+typeofmodel;
+    }
 
 }

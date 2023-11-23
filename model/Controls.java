@@ -22,6 +22,9 @@ public class Controls {
     public int getSeats() {
         return seats;
     }
+    public String toString(){
+        return breaks;
+    }
 
 
 }

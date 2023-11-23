@@ -1,15 +1,19 @@
 package model;
 
-public class Client {
-    public static void main (String Args[]){
-        Car req=new Carexample();
-
-        req.carColor("Black");
-        req.carWheel("Alloy wheels");
+public class Client extends Car {
 
 
-
+    @Override
+    public void carWheel(String Wheel) {
+        System.out.println("wheeltype"+Wheel);
 
     }
+
+    @Override
+    public void carColor(String Color) {
+        System.out.println("Carcolor"+Color);
+
+    }
+
 
 }

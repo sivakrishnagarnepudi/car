@@ -3,8 +3,16 @@ package model;
 public abstract class Car {
     public abstract void carWheel(String Wheel);
     public abstract void carColor(String Color);
-    public void  getcar (String acPoints,String engine,String Controls){
-
+    public void getcar (){
+        AC ac=getacPoints();
+        Engine engine=getengine();
+        Controls controls=getcontrols();
+        System.out.println(ac.getAcPoints());
+        System.out.println(engine.getTypeofengine());
+        System.out.println("car cc:"+engine.getTypeofmodel());
+        System.out.println("Breakstype:"+controls.getBreaks());
+        System.out.println("Number of Gears:"+controls.getGears());
+        System.out.println("Number of seats:"+controls.getSeats());
 
     }
     public AC getacPoints(){
@@ -16,6 +24,7 @@ public abstract class Car {
     public Controls getcontrols(){
         return new Controls("Hydraulic Brakes",6,8);
     }
+
 
 
 }
