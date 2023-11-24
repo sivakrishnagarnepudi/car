@@ -4,14 +4,14 @@ public class Client extends Car {
 
 
     @Override
-    public void carWheel(String Wheel) {
-        System.out.println("wheeltype"+Wheel);
+    public void carWheel() {
+        System.out.println("alloy wheels");
 
     }
 
     @Override
-    public void carColor(String Color) {
-        System.out.println("Carcolor"+Color);
+    public void carColor() {
+        System.out.println("Red color car");
 
     }
 
